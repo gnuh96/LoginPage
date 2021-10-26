@@ -3,16 +3,18 @@ const loginSubmit = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 const loginReset = document.getElementById("login-form-reset");
 
+
 loginSubmit.addEventListener("click", (e) => {
     e.preventDefault();
     let data = {
-        username = loginForm.username.value,
-        password = loginForm.password.value
+        username: loginForm.username.value,
+        password: loginForm.password.value
     };
     
-    fetch('./back/app.js', {
+    fetch('http://localhost:8080/login', {
         method: 'post',
-        body: data
+        body: data,
+        headers: new Headers()
     }).then(function(response){
         return response.text();
     }).then(function (text){
