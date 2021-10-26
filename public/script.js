@@ -5,16 +5,21 @@ const loginReset = document.getElementById("login-form-reset");
 
 loginSubmit.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
-
-    if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in.");
-        // location.reload();
-    } else {
-        alert("Invalid username and/or password");
-        //location.reload();
-    }
+    let data = {
+        username = loginForm.username.value,
+        password = loginForm.password.value
+    };
+    
+    fetch('./back/app.js', {
+        method: 'post',
+        body: data
+    }).then(function(response){
+        return response.text();
+    }).then(function (text){
+        return console.log(text);
+    }).catch(function(error){
+        console.error(error);;
+    })
 })
 
 loginReset.addEventListener("click", (e) => {
