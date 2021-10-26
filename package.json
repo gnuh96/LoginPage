@@ -1,0 +1,22 @@
+{
+  "name": "loginpage",
+  "version": "1.0.0",
+  "description": "Creer une page de connexion securite",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnuh96/LoginPage.git"
+  },
+  "author": "Tuan Hung Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnuh96/LoginPage/issues"
+  },
+  "homepage": "https://github.com/gnuh96/LoginPage#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
