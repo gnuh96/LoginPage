@@ -15,11 +15,14 @@ app.get('/', function(req, res){
 })
 
 app.post('/login', function (req, res) {
-    console.log(req.body);
-    // var username = req.body.username;
-    // var password = req.body.password;
-    // console.log("User name = "+username+", password is "+password);
-    // res.end("yes");
+    var username = req.body.username;
+    var password = req.body.password;
+    if (username === "user" && password === "web_dev") {
+        res.end("yes");
+    } else {
+        res.end("no");
+    }
+    
   });
 
 app.listen(port, function(){

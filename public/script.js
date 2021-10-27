@@ -16,12 +16,10 @@ loginSubmit.addEventListener("click", (e) => {
         body: data
     }).then(function(response){
         if(response === 'yes') {
-            alert("login success");
+            alert("You have successfully logged in.");
         } else {
-            
+            alert("Invalid username and/or password");
         }
-    }).then(function (text){
-        return console.log(text);
     }).catch(function(error){
         console.error(error);;
     })
