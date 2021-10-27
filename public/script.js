@@ -13,10 +13,13 @@ loginSubmit.addEventListener("click", (e) => {
     
     fetch('http://localhost:8080/login', {
         method: 'post',
-        body: data,
-        headers: new Headers()
+        body: data
     }).then(function(response){
-        return response.text();
+        if(response === 'yes') {
+            alert("login success");
+        } else {
+            
+        }
     }).then(function (text){
         return console.log(text);
     }).catch(function(error){
