@@ -1,5 +1,5 @@
 # LoginPage
-Création une page de connexion securité
+Création une page de connexion securisé
 
 Informations techniques :
 - HTML, CSS : créer la page de connexion
