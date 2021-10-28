@@ -13,11 +13,11 @@ app.get('/', function(req, res){
     res.send("Hello World");
 })
 
+// Read file JSON 
 var data = require('./data.json');
 var users = data.user;
-console.log(data);
 
-
+// Verified username and password input
 app.post('/login', function (req, res) {
     var username = req.body.username;
     var password = req.body.password;

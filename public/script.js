@@ -1,9 +1,8 @@
 const loginForm = document.getElementById("form-login");
 const loginSubmit = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
 const loginReset = document.getElementById("login-form-reset");
 
-
+//Send user and password to server for verfiy
 loginSubmit.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
@@ -32,6 +31,7 @@ loginSubmit.addEventListener("click", (e) => {
     })
 })
 
+// Set event for reset button
 loginReset.addEventListener("click", (e) => {
     e.preventDefault();
     location.reload();
