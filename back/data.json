@@ -1,14 +1,24 @@
 {
-  "n1": {
-    "id": "user",
-    "pass": "web_dev"
-  },
-  "n2": {
-    "id": "user2",
-    "pass": "abc2"
-  },
-  "n3": {
-    "id" : "user3",
-    "pass": "abc3"
-  }
+  "user": [
+    {
+      "uuid" : "123-abv",
+      "username" : "tuanhung",
+      "password" : "Pa$$w0rd"
+    },
+    {
+      "uuid" : "456-abv",
+      "username" : "totam",
+      "password" : "Pa$$w0rd"
+    },
+    {
+      "uuid" : "789-abv",
+      "username" : "hungtam",
+      "password" : "Pa$$w0rd"
+    },
+    {
+      "uuid" : "986-abv",
+      "username" : "user",
+      "password" : "web_dev"
+    }
+  ]
 }
