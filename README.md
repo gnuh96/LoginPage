@@ -17,5 +17,7 @@ Utilise :
 - Excecuter le fichier public/index.html
 - Test les identifiants
 
-Identifiant : user
-Mots de passe : web_dev
+Note :
+- Identifiant : user
+- Mots de passe : web_dev
+- Maintenant, je ne réussi pas de mettre en place la base de données pour stocker plusieurs identifiants, mais je continue d'essayer de le faire.
