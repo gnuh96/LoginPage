@@ -6,6 +6,9 @@ const port = 8080;
 
 app.use(cors());
 
+// Parse JSON bodies (as sent by API clients)
+app.use(express.json());
+
 // router.get('/',function(req,res){
 //     res.sendfile("index.html");
 // });
@@ -22,7 +25,6 @@ app.post('/login', function (req, res) {
     } else {
         res.end("no");
     }
-    
   });
 
 app.listen(port, function(){

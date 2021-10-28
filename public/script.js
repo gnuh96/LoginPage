@@ -6,16 +6,23 @@ const loginReset = document.getElementById("login-form-reset");
 
 loginSubmit.addEventListener("click", (e) => {
     e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
     let data = {
-        username: loginForm.username.value,
-        password: loginForm.password.value
+        username: username,
+        password: password
     };
     
     fetch('http://localhost:8080/login', {
         method: 'post',
-        body: data
-    }).then(function(response){
-        if(response === 'yes') {
+        body: JSON.stringify(data),
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then(response => response.text()
+    ).then(function(response){
+        if(response === "yes") {
             alert("You have successfully logged in.");
         } else {
             alert("Invalid username and/or password");
