@@ -1,0 +1,14 @@
+{
+  "n1": {
+    "id": "user",
+    "pass": "web_dev"
+  },
+  "n2": {
+    "id": "user2",
+    "pass": "abc2"
+  },
+  "n3": {
+    "id" : "user3",
+    "pass": "abc3"
+  }
+}

@@ -1,6 +1,5 @@
 const express = require('express'); 
 var cors = require('cors');
-//const router = express.Router();
 const app = express(); 
 const port = 8080; 
 
@@ -8,10 +7,6 @@ app.use(cors());
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
-
-// router.get('/',function(req,res){
-//     res.sendfile("index.html");
-// });
 
 app.get('/', function(req, res){
     res.send("Hello World");
