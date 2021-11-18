@@ -1,0 +1,15 @@
+ServerSignature Off
+Options All -Indexes
+IndexIgnore *
+
+# Protected .htaccess et .htpasswds
+<Files ~ ~ "^.*\.([Hh]][Tt]][AaPaP])">
+order allow,deny
+deny from all
+satisfaction all
+</Files>
+
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?:://(www\.)?cuongcong.com [NC]
+RewriteRule \.(jpg|jpeg|png|png|gif)$ https://fakeimg.pl/300/?text=No_copy_images [NC,R,L]
